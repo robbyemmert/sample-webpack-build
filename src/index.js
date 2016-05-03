@@ -6,8 +6,8 @@
  */
 require('./styles/core.scss');
 
-var person = require('./person.js');
+import person from './person';
 
 console.log('Build loaded @ ', new Date());
 
-console.log('hello ' + person);
+console.log(`hello ${person}`);

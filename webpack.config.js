@@ -15,6 +15,11 @@ module.exports = {
 			{
 				test: /\.hbs$/,
 				loaders: ['handlebars']
+			},
+			{
+				test: /\.jsx?$/,
+				exclude: /(node_modules|bower_components)/,
+				loaders: ['babel']
 			}
 		]
 	},
