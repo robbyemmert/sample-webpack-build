@@ -1,0 +1,18 @@
+{
+  "name": "jsbuild",
+  "version": "1.0.0",
+  "description": "A set of modern build tools for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robby Emmert",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "node-sass": "^3.7.0",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.0"
+  }
+}
