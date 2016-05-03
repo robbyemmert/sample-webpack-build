@@ -4,7 +4,8 @@
   "description": "A set of modern build tools for JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --colors --progress",
+	"build": "webpack --progress --colors"
   },
   "author": "Robby Emmert",
   "license": "MIT",
