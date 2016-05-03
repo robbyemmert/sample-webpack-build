@@ -8,4 +8,6 @@ require('./styles/core.scss');
 
 var person = require('./person.js');
 
+console.log('Build loaded @ ', new Date());
+
 console.log('hello ' + person);
