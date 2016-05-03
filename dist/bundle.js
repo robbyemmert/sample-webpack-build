@@ -73,8 +73,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./core.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./core.css");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./core.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./core.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -92,7 +92,7 @@
 
 
 	// module
-	exports.push([module.id, ".highlighted {\n\tbackground-color: yellow;\n}\n", ""]);
+	exports.push([module.id, ".highlighted {\n  background-color: #FFFF00; }\n", ""]);
 
 	// exports
 

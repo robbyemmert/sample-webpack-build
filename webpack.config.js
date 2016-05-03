@@ -7,8 +7,8 @@ module.exports = {
 	module: {
 		loaders: [
 			{
-				test: /\.css$/,
-				loaders: ['style', 'css']
+				test: /\.s?css$/,
+				loaders: ['style', 'css', 'sass']
 			}
 		]
 	}
