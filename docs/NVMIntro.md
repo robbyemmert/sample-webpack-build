@@ -19,7 +19,7 @@ Extract and run the installer inside of that zip file.
 To get Node JS running, you have to install, then activate, a version of Node JS.  Here's how:
 
 ### For Mac/Linux
-You might have to restart your terminal after installing NVM.  It's important to note that every time
+You might have to restart your terminal after installing NVM.  It's important to note that every time you close your terminal, all versions of node get de-activated.  See the tip at the bottom of this section to overcome this.
 
 To install the latest version of node:  
 `nvm install node`  
