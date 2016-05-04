@@ -1,6 +1,11 @@
 # Sample Webpack Environment
 By: Robby Emmert
 
+### Dependencies  
+1. **Node JS**:  
+I recommend installing Node JS with NVM: [For Windows](https://github.com/coreybutler/nvm-windows), [For Mac](https://github.com/creationix/nvm)  
+2. **Mac, Windows, or Linux**  
+
 ### Quick Start
 1. Fork this repository.  Rename it to whatever you want your project to be called.
 2. Clone *your* fork of the repository (the fork you just made).
