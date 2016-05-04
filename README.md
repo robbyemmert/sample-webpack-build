@@ -3,7 +3,7 @@ By: Robby Emmert
 
 ### Dependencies  
 1. **Node JS**:  
-I recommend installing Node JS with NVM: [For Windows](https://github.com/coreybutler/nvm-windows), [For Mac](https://github.com/creationix/nvm).  
+If you don't have Node JS, you'll need it for this tutorial.  I suggest installing it with NVM (as it can save lots of headaches when switching Node versions).  [Here's](docs/NVMIntro.md) a quick tutorial on NVM.
 2. **Mac, Windows, or Linux**  
 
 ### Quick Start

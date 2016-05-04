@@ -3,10 +3,12 @@
 ## Setup
 
 ### For Mac/Linux
+If you aren't sure if you have a bash profile yet, run `touch ~/.bash_profile` (Mac) or `touch ~/.bashrc`(Linux) to make sure.
+
 Visit https://github.com/creationix/nvm and find a command that looks like this:  
 `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash`  
 
-Run that command in your terminal.  
+Run that command in your terminal.  Mac OS might ask you to install some git-related software.  You definitely want that.
 
 ### For Windows  
 Visit https://github.com/coreybutler/nvm-windows/releases and click the `nvm-setup.zip` file associated with the latest release. (1.1.0 at the time this was written).
@@ -14,9 +16,10 @@ Visit https://github.com/coreybutler/nvm-windows/releases and click the `nvm-set
 Extract and run the installer inside of that zip file.
 
 ## Usage
+To get Node JS running, you have to install, then activate, a version of Node JS.  Here's how:
 
 ### For Mac/Linux
-You might have to restart your terminal after installing NVM.
+You might have to restart your terminal after installing NVM.  It's important to note that every time
 
 To install the latest version of node:  
 `nvm install node`  
@@ -30,7 +33,7 @@ To activate the latest version of node (assuming it is installed):
 To activate a specific version of node (assuming it is installed):  
 `nvm use x.x.x` *(where x.x.x is the version you want).*
 
-Tip: You might want to put a `nvm use x.x.x` command in your bash profile, so that NVM defaults to a specific version automatically every time you open a terminal.  You'll want to add the use command to your `.bash_profile` file on Mac, or your `.bashrc` file on Linux.
+Tip: You might want to put a `nvm use x.x.x` command in your bash profile, so that you don't have to type `nvm use x.x.x` every time you want to work on a node project.  You'll want to add the use command to your `.bash_profile` file on Mac, or your `.bashrc` file on Linux.
 
 ### For Windows
 You might have to restart your command line after installing NVM.
