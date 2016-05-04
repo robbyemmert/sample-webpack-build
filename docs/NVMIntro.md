@@ -33,7 +33,7 @@ To activate the latest version of node (assuming it is installed):
 To activate a specific version of node (assuming it is installed):  
 `nvm use x.x.x` *(where x.x.x is the version you want).*
 
-Tip: You might want to put a `nvm use x.x.x` command in your bash profile, so that you don't have to type `nvm use x.x.x` every time you want to work on a node project.  You'll want to add the use command to your `.bash_profile` file on Mac, or your `.bashrc` file on Linux.
+**Tip**: You might want to put a `nvm use x.x.x` command in your bash profile, so that you don't have to type `nvm use x.x.x` every time you want to work on a node project.  You'll want to add the use command to your `.bash_profile` file on Mac, or your `.bashrc` file on Linux.
 
 ### For Windows
 You might have to restart your command line after installing NVM.
