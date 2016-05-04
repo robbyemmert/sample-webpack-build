@@ -24,7 +24,7 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new HtmlWebpackPlugin({
+		new HtmlWebpackPlugin({		// Plugin to inject source references into index.html (note: doesn't need handlebars)
 			title: 'Webpack Build',
 			template: './src/index.hbs'
 		})
