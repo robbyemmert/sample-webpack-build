@@ -3,7 +3,7 @@ By: Robby Emmert
 
 ### Dependencies  
 1. **Node JS**:  
-If you don't have Node JS, you'll need it for this tutorial.  I suggest installing it with NVM (as it can save lots of headaches when switching Node versions).  [Here's](docs/NVMIntro.md) a quick tutorial on NVM.
+If you don't have Node JS, you'll need it for this tutorial.  I suggest installing it with NVM (as it can save lots of headaches when switching Node versions).  [Here's](docs/NVMIntro.md) how to get it set up.
 2. **Mac, Windows, or Linux**  
 
 ### Quick Start
