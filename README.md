@@ -12,4 +12,4 @@ I recommend installing Node JS with NVM: [For Windows](https://github.com/coreyb
 3. `cd` into the just-cloned project folder.
 4. Type `npm install` to install all of the NodeJS dependencies for the project (see a list below).
 5. Type `npm install -g webpack webpack-dev-server` to install Webpack for yourself.
-6. Type `npm start` to start the Webpack Dev Server.  Your project is running (with live-reloading code) at http://localhost:8080
+6. Type `npm start` to start the Webpack Dev Server.  Your project is running (with live-reloading code) at http://localhost:8080.  As soon as you save a file, it should re-load in real time in your browser.
