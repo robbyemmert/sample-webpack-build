@@ -6,8 +6,11 @@
  */
 require('./styles/core.scss');
 
-import person from './person';
+import Person from './person';
+import ReactDOM from 'react-dom';
+import React from 'react';
 
 console.log('Build loaded @ ', new Date());
 
-console.log(`hello ${person.name}`);
+let node = document.getElementById('react-mount');
+ReactDOM.render(<Person name="Robby"></Person>, node);
