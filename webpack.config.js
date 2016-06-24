@@ -12,10 +12,6 @@ module.exports = {
 				test: /\.s?css$/,
 				loaders: ['style', 'css', 'sass']
 			},
-			{	// Handlebars loader config (optional)
-				test: /\.hbs$/,
-				loaders: ['handlebars']
-			},
 			{	// ES6 loader config
 				test: /\.jsx?$/,
 				exclude: /(node_modules|bower_components)/,
@@ -26,7 +22,7 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({		// Plugin to inject source references into index.html (note: doesn't need handlebars)
 			title: 'Webpack Build',
-			template: './src/index.hbs'
+			template: './src/index.html'
 		})
 	]
 }
