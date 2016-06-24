@@ -5,7 +5,8 @@ class HomePage extends React.Component {
         return (
             <div id="container-home-page">
                 <h1>Home</h1>
-                <p>Hello World</p>
+                <p>Hello World! Here's a widget:</p>
+                <DefaultComponent />
             </div>
         );
     }
