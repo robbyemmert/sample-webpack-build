@@ -16,7 +16,8 @@ import store from './store';
 import { routes } from './constants';
 import {
     Navigator,
-    HomePage
+    HomePage,
+    SecondPage
 } from './containers';
 
 render((
@@ -24,6 +25,7 @@ render((
         <Router history={browserHistory}>
             <Route path={routes.HOME} component={Navigator}>
                 <IndexRoute component={HomePage} />
+                <Route path={routes.SECOND_PAGE} component={SecondPage} />
             </Route>
         </Router>
     </Provider>

@@ -1,3 +1,4 @@
 export default {
-    HOME: '/'
+    HOME: '/',
+    SECOND_PAGE: '/second-page'
 }
