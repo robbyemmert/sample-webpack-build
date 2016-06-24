@@ -2,6 +2,7 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CleanWebpackPlugin = require('clean-webpack-plugin');
 var ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
+var autoprefixer = require('autoprefixer');
 
 var cssExtractor = new ExtractTextWebpackPlugin('styles/[name].css');
 var lifecycleEvent = process.env.npm_lifecycle_event;
@@ -18,7 +19,7 @@ var config = {
             {    // CSS/Sass loader config
 				key: 'STYLES',
                 test: /\.s?css$/,
-                loaders: ['css', 'sass']
+                loaders: ['css', 'postcss', 'sass']
             },
             {    // ES6 loader config
 				key: 'JS',
@@ -33,6 +34,9 @@ var config = {
             }
         ]
     },
+	postcss: [
+		autoprefixer({ browsers: ['last 3 versions'] })	// Automatically adds vendor prefixes for x browser versions (and all vendors). :D
+	],
     plugins: [
         new HtmlWebpackPlugin({        // Plugin to inject source references into index.html (note: doesn't need handlebars)
             title: 'Webpack Build',
