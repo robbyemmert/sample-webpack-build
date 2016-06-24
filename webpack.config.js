@@ -15,6 +15,13 @@ var config = {
     },
     devtool: 'source-map',
     module: {
+		preLoaders: [
+            {
+                test: /\.jsx?$/,
+                loaders: ['eslint'],
+                exclude: /node_modules/
+            }
+        ],
         loaders: [
             {    // CSS/Sass loader config
 				key: 'STYLES',
