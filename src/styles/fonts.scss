@@ -1,0 +1,17 @@
+$robotoRegularFont: url('./fonts/Roboto-Regular.ttf') format('truetype');
+$robotoBoldFont: url('./fonts/Roboto-Bold.ttf') format('truetype');
+
+$robotoFamily: 'Roboto';
+
+// Multiple font faces for each weight and style, but one font family to keep things simple.
+@font-face {
+    font-family: $robotoFamily;
+    src: $robotoRegularFont;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: $robotoFamily;
+    src: $robotoBoldFont;
+    font-weight: bold;
+}
