@@ -1,5 +1,7 @@
 import base from './base.scss';
+import grid from 'bootstrap-grid';
 
 export {
-    base
+    base,
+    grid
 }

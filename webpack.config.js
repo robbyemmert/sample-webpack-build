@@ -14,6 +14,7 @@ var lifecycleEvent = process.env.npm_lifecycle_event;
 var config = {
     entry: './src/app.jsx',
     output: {
+        publicPath: '/',
         path: __dirname + '/public',
         filename: 'js/app.js'
     },

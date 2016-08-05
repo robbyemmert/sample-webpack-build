@@ -1,7 +1,5 @@
-/*
-VARIABLES AND MIXINS ONLY!
-All other styles should be added in separate files and linked in base.scss
- */
-.test {
-    transform: rotateX(180deg);
-}
+
+ .header {
+     background-color: #dedede;
+     border-radius: 5px;
+ }
