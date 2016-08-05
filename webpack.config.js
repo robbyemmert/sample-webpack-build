@@ -7,6 +7,10 @@ var autoprefixer = require('autoprefixer');
 var cssExtractor = new ExtractTextWebpackPlugin('styles/[name].css');
 var lifecycleEvent = process.env.npm_lifecycle_event;
 
+/*
+    INITIAL CONFIG
+ */
+
 var config = {
     entry: './src/app.jsx',
     output: {
@@ -65,7 +69,13 @@ var config = {
     }
 }
 
+/*
+    OVERRIDE THE INITIAL CONFIG BASED ON OUR ENVIRONMENT
+ */
 switch (lifecycleEvent) {
+    /*
+        PRODUCTION CONFIGURATION
+     */
 	case 'build':
 		// build specific mutations
 
@@ -96,7 +106,9 @@ switch (lifecycleEvent) {
 
 		break;
 	default:
-		// in all other cases
+		/*
+    		DEVELOPMENT CONFIGURATION
+		 */
 		config.module.loaders.forEach(item => {
 			switch (item.key) {
 				case 'STYLES':
