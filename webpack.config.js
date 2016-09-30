@@ -7,6 +7,8 @@ var autoprefixer = require('autoprefixer');
 var cssExtractor = new ExtractTextWebpackPlugin('styles/[name].css');
 var lifecycleEvent = process.env.npm_lifecycle_event;
 
+require('dotenv').config();
+
 /*
     INITIAL CONFIG
  */
