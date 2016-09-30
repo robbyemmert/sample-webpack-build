@@ -66,7 +66,7 @@ var devConfig = {
         proxy: {
             // Proxy the url /api to an external API.  This way you don't have to install the server on your computer and can get coding faster.
             '/api': {
-                target: 'https://your-api.com',
+                target: process.env.API_HOST || 'localhost',
                 xfwd: true,
                 changeOrigin: true
             }
@@ -138,7 +138,7 @@ var buildConfig = {
         proxy: {
             // Proxy the url /api to an external API.  This way you don't have to install the server on your computer and can get coding faster.
             '/api': {
-                target: 'https://your-api.com',
+                target: process.env.API_HOST || 'localhost',
                 xfwd: true,
                 changeOrigin: true
             }
